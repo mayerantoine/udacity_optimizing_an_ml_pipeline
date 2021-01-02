@@ -13,7 +13,7 @@ only achieve a 90.6 % performance accurancy.
 
 ## Scikit-learn Pipeline
 
-We have downloaded the data from a web link, clean it and one hot encoded some key features , split in train and test with 25% of the data in testing,
+We downloaded the data from a web link, clean it and one hot encoded some key features , split in train and test with 25% of the data in testing,
 And then we train the data using Hyperdrive with RandomSampling. We only focus our hyperparament fine tuning on two key parameters of Logistic Regression :
     * C  : Inverse of regularization strength; must be a positive float.
     *  max_iter : Maximum number of iterations taken for the solvers to converge.
@@ -23,7 +23,7 @@ We used Random sampling search because it should more faster, allow more coverag
 We used a Bandit Policy early termination, because  it automatically terminate poorly performing runs with an early termination policy and terminates runs where the primary metric is not within the specified slack factor/slack amount compared to the best performing run.This Early termination improves computational efficiency.
 
 ## AutoML
-We have downloaded the data from a web link, clean it and one hot encoded some key features , split in train and test with 25% of the data in testing.
+We downloaded the data from a web link, clean it and one hot encoded some key features , split in train and test with 25% of the data in testing.
 Then we created a dataset that we passed to Azure Auto ML.
 
 
